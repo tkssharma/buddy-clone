@@ -1,2 +1,2 @@
 if [ "$NO_VERIFY_YOLO" ]; then exit 0; fi
-npm run lint && npm run prettier && npm run lint-staged
+npm run lint && npm run prettier && npx lint-staged

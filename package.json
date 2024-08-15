@@ -11,6 +11,11 @@
     "prettier": "./node_modules/.bin/prettier --check \"**/*.{js,json,ts,tsx,yml,yaml}\"",
     "prettier:write": "./node_modules/.bin/prettier --write \"**/*.{js,json,ts,tsx,yml,yaml}\""
   },
+  "lint-staged": {
+    "**/*.{js,ts,tsx}": [
+      "npm run prettier:write"
+    ]
+  },
   "dependencies": {
     "next": "14.2.5",
     "react": "^18",
