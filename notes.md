@@ -1,0 +1,1 @@
+npm install --save-dev eslint prettier husky lint-staged  eslint-plugin-prettier prettier-plugin-tailwindcss
