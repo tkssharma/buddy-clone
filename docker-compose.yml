@@ -1,0 +1,17 @@
+version: "3.6"
+
+services:
+  postgres:
+    image: postgres
+    environment:
+      - POSTGRES_USER=api
+      - POSTGRES_PASSWORD=development_pass
+      - POSTGRES_MULTIPLE_DATABASES="nestjs-api","nestjs-api-testing"
+    volumes:
+      - ./docker:/docker-entrypoint-initdb.d
+      - db-data:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+
+volumes:
+  db-data: {}
