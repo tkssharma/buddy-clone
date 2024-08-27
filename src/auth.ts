@@ -13,11 +13,8 @@ export const {
   events: {},
   callbacks: {
     signIn({ user, account }) {
-      if (account?.provider !== "credentials") return true;
-      // otherwise check if user verified ete ctec //
       return true;
     },
-
     async session({ session, token }) {
       if (token.sub && session.user) {
         session.user.id = token.sub;
@@ -30,12 +27,16 @@ export const {
     },
 
     async jwt({ token }) {
+      console.log(token);
       if (!token?.sub) return token;
-      const existingUser = await getUserById(token.sub);
-      if (!existingUser) {
-        return token;
-      }
+      const existingUser = await getUserById(token.sub!);
+      if (!existingUser) return token;
+      console.log(existingUser);
+      const existingAccount = await getUserById(existingUser.id);
+      console.log(existingAccount);
+      token.isOAuth = !!existingAccount;
       token.role = existingUser.role;
+      token.isTwoFactorEnabled = existingUser.isTwoFactorEnabled;
       token.name = existingUser.name;
       token.email = existingUser.email;
       return token;
