@@ -1,6 +1,60 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+![](https://i.ytimg.com/vi/Ay-_KqkkOag/maxresdefault.jpg)
 
 https://www.youtube.com/watch?v=Ay-_KqkkOag
+
+### How to Follow sessions 
+
+
+- Build Full Stack App || Open collaboration, come and Build Apps with Me #02
+- Video thumbnail: Let's start our App Development || Github and Project Kanban Board setup #03
+- Let's start our App Development || Github and Project Kanban Board setup #03
+- FullStack Clone || Baseline Repo Like a Pro with Husky, Commitlint , prettier #04
+- Video thumbnail: Nextjs setup with Prisma and NextAuth Part-1 #05
+- Video thumbnail: Next-Auth v5 is Almost Here! Learn it Fast on the NextJS App #06
+- Video thumbnail: Authentication in NextJS using NextAuth | NextJS in Hindi #07
+- Premiere thumbnail: NextJS Dashboard Layout with Middlewares &  nextauth  #08
+
+
+<table class="ws-table-all" id="customers">
+  <tbody><tr>
+    <th>Video</th>
+    <th>Link</th>
+  </tr>
+  <tr>
+    <td>Build Full Stack App || Open collaboration, come and Build Apps with Me #02</td>
+    <td>https://www.youtube.com/watch?v=Ay-_KqkkOag&list=PLU-FndeNRY4Cw7Kq7SHtqpI5bK06s8wt0&index=2</td>
+  </tr>
+  <tr>
+    <td>Video thumbnail: Let's start our App Development || Github and Project Kanban Board setup #03</td>
+    <td>https://www.youtube.com/watch?v=Ay-_KqkkOag&list=PLU-FndeNRY4Cw7Kq7SHtqpI5bK06s8wt0&index=2</td>
+  </tr>
+  <tr>
+    <td>Let's start our App Development || Github and Project Kanban Board setup #03</td>
+    <td>https://www.youtube.com/watch?v=Ay-_KqkkOag&list=PLU-FndeNRY4Cw7Kq7SHtqpI5bK06s8wt0&index=2</td>
+  </tr>
+  <tr>
+    <td>FullStack Clone || Baseline Repo Like a Pro with Husky, Commitlint , prettier #04</td>
+    <td>https://www.youtube.com/watch?v=Ay-_KqkkOag&list=PLU-FndeNRY4Cw7Kq7SHtqpI5bK06s8wt0&index=2</td>
+  </tr>
+  <tr>
+    <td>Video thumbnail: Nextjs setup with Prisma and NextAuth Part-1 #05</td>
+    <td>https://www.youtube.com/watch?v=Ay-_KqkkOag&list=PLU-FndeNRY4Cw7Kq7SHtqpI5bK06s8wt0&index=2</td>
+  </tr>
+  <tr>
+    <td>Video thumbnail: Next-Auth v5 is Almost Here! Learn it Fast on the NextJS App #06</td>
+    <td>https://www.youtube.com/watch?v=Ay-_KqkkOag&list=PLU-FndeNRY4Cw7Kq7SHtqpI5bK06s8wt0&index=2</td>
+  </tr>
+    <tr>
+    <td>Video thumbnail: Authentication in NextJS using NextAuth | NextJS in Hindi #07</td>
+    <td>https://www.youtube.com/watch?v=Ay-_KqkkOag&list=PLU-FndeNRY4Cw7Kq7SHtqpI5bK06s8wt0&index=2</td>
+  </tr>
+    <tr>
+    <td>Premiere thumbnail: NextJS Dashboard Layout with Middlewares &  nextauth  #08
+</td>
+    <td>https://www.youtube.com/watch?v=Ay-_KqkkOag&list=PLU-FndeNRY4Cw7Kq7SHtqpI5bK06s8wt0&index=2</td>
+  </tr>
+</tbody></table>
 
 ## Getting Started
 
