@@ -15,6 +15,11 @@ https://www.youtube.com/watch?v=Ay-_KqkkOag
 - Video thumbnail: Authentication in NextJS using NextAuth | NextJS in Hindi #07
 - Premiere thumbnail: NextJS Dashboard Layout with Middlewares &  nextauth  #08
 
+### Follow these Branches 
+
+- baseline (develop branch)
+- Auth screens feat-auth-screens
+- dashboard layouts feat-dashboard-layouts
 
 <table class="ws-table-all" id="customers">
   <tbody><tr>
