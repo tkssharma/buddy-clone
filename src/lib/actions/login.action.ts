@@ -26,6 +26,7 @@ export const loginUser = async (
     // check with auth now
     console.log(email, password);
 
+    // ! fix this auth redirect issue
     await signIn("credentials", {
       email,
       password,

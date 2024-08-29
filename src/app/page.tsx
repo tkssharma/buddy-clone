@@ -20,7 +20,7 @@ export default function Home() {
             poppins.className,
           )}
         >
-          Auth.js
+          LandingPage
         </h1>
         <p className="text-lg text-slate-400">Buddy Clone</p>
         <div></div>
