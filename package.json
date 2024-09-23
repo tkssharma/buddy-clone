@@ -18,7 +18,7 @@
     ]
   },
   "prisma": {
-    "schema": "./src/prisma/prisma.schema"
+    "schema": "./src/prisma/schema.prisma"
   },
   "dependencies": {
     "@auth/prisma-adapter": "^2.4.2",

@@ -1,5 +1,13 @@
-import { NextRequest, NextResponse } from "next/server";
+import { db } from "@/lib/db";
+import type { NextApiRequest, NextApiResponse } from "next";
 
-export async function GET(req: NextRequest, res: NextResponse) {
-  return new NextResponse("OK", { status: 200 });
+type ResponseData = {
+  message: string;
+};
+
+export default function handler(
+  req: NextApiRequest,
+  res: NextApiResponse<ResponseData>,
+) {
+  res.status(200).json({ message: "Hello from Next.js!" });
 }

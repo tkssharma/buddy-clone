@@ -9,6 +9,18 @@ export const LoginSchema = z.object({
   }),
 });
 
+export const ProjectSchema = z.object({
+  name: z.string().min(6, {
+    message: "name required",
+  }),
+  description: z.string().min(10, {
+    message: "desc required",
+  }),
+  type: z.string().min(6, {
+    message: "type required",
+  }),
+});
+
 export const RegisterSchema = z.object({
   email: z.string().email({
     message: "email required",
