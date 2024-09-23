@@ -1,5 +1,6 @@
 import { auth } from "@/auth";
 import { db } from "@/lib/db";
+import { RequestStatus } from "@prisma/client";
 import { NextRequest, NextResponse } from "next/server";
 
 export async function GET(req: NextRequest, res: NextResponse) {
@@ -7,13 +8,31 @@ export async function GET(req: NextRequest, res: NextResponse) {
   if (!session) {
     return new NextResponse(JSON.stringify({}), { status: 401 });
   }
-  console.log(session);
-  console.log(session.user);
-  const userId = session?.user?.id;
-  const projects = await db.projects.findMany({
+  const ownedProjects = await db.projects.findMany({
     where: {
-      userId: userId,
+      userId: session.user?.id,
     },
   });
-  return new NextResponse(JSON.stringify(projects), { status: 200 });
+  const assigned =
+    (await db.colloberationRequests.findMany({
+      where: {
+        userId: session.user?.id,
+        status: RequestStatus.APPROVED,
+      },
+    })) || [];
+  if (assigned.length > 0) {
+    const ids = assigned.map((i) => i.projectId);
+    const assignedProjects = await db.projects.findMany({
+      where: {
+        id: {
+          in: ids,
+        },
+      },
+    });
+    return new NextResponse(
+      JSON.stringify([...ownedProjects, ...assignedProjects]),
+      { status: 200 },
+    );
+  }
+  return new NextResponse(JSON.stringify([...ownedProjects]), { status: 200 });
 }

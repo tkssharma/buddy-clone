@@ -73,11 +73,14 @@ model ColloberationRequests {
   status          RequestStatus
   project Projects @relation(fields: [projectId], references: [id], onDelete: Cascade)
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
 }
 
 model Comments {
   id                String  @id @default(cuid())
   userId            String
+  commentText        String
+  parentId          String?
   projectId         String
   status          RequestStatus
   project Projects @relation(fields: [projectId], references: [id], onDelete: Cascade)
